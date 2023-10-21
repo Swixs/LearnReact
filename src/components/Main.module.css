@@ -1,0 +1,11 @@
+.main{
+    grid-area: m;
+    background-color: brown;
+  }
+
+  .background{
+    width: 1000px;
+    height: 300px;
+    margin: 10px;
+  }
+  

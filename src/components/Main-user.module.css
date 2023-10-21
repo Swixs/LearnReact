@@ -1,0 +1,17 @@
+.logo{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+  
+  }
+  
+  .logo div{
+    font-size: 1.5rem;
+  }
+  
+  .txt{
+    margin-left: 20px;
+  }
+  .NameUser{
+    margin-bottom: 20px;
+  }

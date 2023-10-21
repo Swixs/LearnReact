@@ -7,23 +7,28 @@
   grid-template-columns: 2fr 10fr;
   width: 1200px;
   margin: 0 auto;
-}
-
-.App__App-Header{
-  padding-top: 20px;
-  grid-area: h;
-  background-color: green;
-}
-.App__App-Header img{
-  width: 100px;
+  background-color: brown;
 }
 
 .App__App-nav{
   grid-area: n;
   background-color: burlywood;
+  margin-top: 10px;
+  width: 200px;
 }
 
 .App__App-main{
   grid-area: m;
   background-color: brown;
+}
+
+.App__App-nav div{
+  color: black;
+  font-size: 2rem;
+}
+
+.App-main__main-background-img{
+  width: 1000px;
+  height: 300px;
+  margin: 10px;
 }
