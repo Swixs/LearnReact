@@ -1,0 +1,11 @@
+.nav{
+    grid-area: n;
+    background-color: burlywood;
+    margin-top: 10px;
+    width: 200px;
+  }
+  
+  .nav div{
+    color: black;
+    font-size: 2rem;
+  }
