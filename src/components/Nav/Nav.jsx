@@ -3,21 +3,21 @@ import NavClass from './Nav.module.css'
 
 const Nav = () => {
     return <nav className={NavClass.nav}>
-    <div>
+    <a className={NavClass.firstA} href="#">
       Profile
-    </div>
-    <div>
+    </a>
+    <a href="#">
       Messages
-    </div>
-    <div>
+    </a>
+    <a href="#">
       News
-    </div>
-    <div>
+    </a>
+    <a href="#">
       Music
-    </div>
-    <div>
+    </a>
+    <a href="#">
       Settings
-    </div>
+    </a>
   </nav>
 }
 
