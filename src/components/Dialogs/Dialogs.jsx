@@ -2,7 +2,9 @@ import React from "react";
 
 const Dialogs = () => {
     return (
-        <div></div>
+        <div>
+            Dialogs
+        </div>
     );
 }
 

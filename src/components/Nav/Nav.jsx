@@ -6,7 +6,7 @@ const Nav = () => {
     <a href="/Profile" className={NavClass.firstA} >
       Profile
     </a>
-    <a href="#">
+    <a href="/Dialogs">
       Messages
     </a>
     <a href="#">
