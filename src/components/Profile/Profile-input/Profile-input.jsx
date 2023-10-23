@@ -1,7 +1,7 @@
 import React from "react";
-import ClassInput from './MainInput.module.css'
+import ClassInput from './ProfileInput.module.css'
 
-const MainInput = () => {
+const ProfileInput = () => {
     return (
         <div >
             <input className={ClassInput.item} type="text" placeholder="Send message"/>
@@ -9,4 +9,4 @@ const MainInput = () => {
     );
 }
 
-export default MainInput
+export default ProfileInput

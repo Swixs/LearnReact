@@ -1,5 +1,5 @@
 import React from "react";
-import classMainUser from './Main-user.module.css'
+import classMainUser from './Profile-user.module.css'
 
 
 const MainLogo = () => {

@@ -1,8 +1,8 @@
 import React from "react";
 
-import classPosts from './mainUserPosts.module.css'
+import classPosts from './ProfileUserPosts.module.css'
 
-const post = (props) => {
+const ProfilePost = (props) => {
 
     return (
         <div className={classPosts.postRow}>
@@ -14,4 +14,4 @@ const post = (props) => {
     );
 }
 
-export default post
+export default ProfilePost

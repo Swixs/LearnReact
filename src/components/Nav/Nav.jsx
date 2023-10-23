@@ -3,7 +3,7 @@ import NavClass from './Nav.module.css'
 
 const Nav = () => {
     return <nav className={NavClass.nav}>
-    <a className={NavClass.firstA} href="#">
+    <a href="/Profile" className={NavClass.firstA} >
       Profile
     </a>
     <a href="#">
