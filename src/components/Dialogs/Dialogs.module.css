@@ -1,0 +1,20 @@
+.dialogs{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    padding-top: 20px;
+}
+
+.users{
+    font-size: 1.5rem;
+    margin-left: 40px;
+}
+
+.chats{
+    font-size: 1.5rem;
+    margin-left: 40px;
+}
+
+.dialog{
+    text-decoration: none;
+    color: azure;
+}
