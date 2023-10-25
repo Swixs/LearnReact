@@ -13,7 +13,7 @@ const Profile = (props) => {
         <ProfileLogo />
         <ProfileInput />
         <div className="posts">
-            <ProfilePost text={props.text} />
+            <ProfilePost text={props.state.text} />
         </div>
     </main>
 }
