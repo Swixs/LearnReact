@@ -4,7 +4,8 @@ import ProfileClass from './Profile.module.css';
 import ProfileInput from "./Profile-input/Profile-input";
 import ProfilePost from "./Profile-user-posts/Profile-user-posts";
 
-const Profile = () => {
+const Profile = (props) => {
+
     return <main className={ProfileClass.main}>
         <div>
             <img className={ProfileClass.background} src='https://img.freepik.com/free-vector/flat-design-mountain-landscape_23-2149161403.jpg'></img>
@@ -12,7 +13,7 @@ const Profile = () => {
         <ProfileLogo />
         <ProfileInput />
         <div className="posts">
-            <ProfilePost />
+            <ProfilePost text={props.text} />
         </div>
     </main>
 }
