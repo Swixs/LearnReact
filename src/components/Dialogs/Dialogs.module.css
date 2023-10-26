@@ -18,3 +18,10 @@
     text-decoration: none;
     color: azure;
 }
+
+.itemArea{
+    margin-top: 40px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+}

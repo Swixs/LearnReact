@@ -2,3 +2,10 @@
    width: 230px;
    height: 50px;
 }
+
+.items{
+   display: flex;
+   flex-direction: column;
+   width: 200px;
+   margin-left: 20px;
+}

@@ -33,4 +33,16 @@ let state = {
     },
 }
 
+export let addPost = (postMessage) => {
+    let newText = {
+      id: state.profilePage.text.length + 1, 
+      text: postMessage,
+      likesCount: 0,
+      foto:
+        'https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-an-avatar-in-a-dark-background-with-red-eyes-image_2914141.jpg',
+    };
+  
+    state.profilePage.text.push(newText);
+  };
+
 export default state
