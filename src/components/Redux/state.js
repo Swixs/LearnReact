@@ -4,6 +4,7 @@ let state = {
             { id: 1, text: 'Hello my name Nikita', likes: '15 ♡', foto: "https://img.freepik.com/free-photo/3d-rendering-of-zoom-call-avatar_23-2149556782.jpg" },
             { id: 2, text: 'Do you want work', likes: '3 ♡', foto: "https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-an-avatar-in-a-dark-background-with-red-eyes-image_2914141.jpg" },
         ],
+        NewTextInput: 'it-curse'
     },
 
     dialogsPage: {

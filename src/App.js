@@ -10,13 +10,16 @@ import Settings from './components/Settings/Settings';
 import Friends from './components/Friends/Friends';
 
 const App = (props) => {
+  const updateNewText = (text) => {
+    props.state.profilePage.NewTextInput = text;
+  }
   return (
     <BrowserRouter>
       <div className='App'>
         <Header />
         <Nav />
         <Routes>
-          <Route path="/Profile" element={<Profile postsData={props.postsData} state={props.state.profilePage} addPost={props.addPost} />} />
+          <Route path="/Profile" element={<Profile postsData={props.postsData} profilePage={props.state.profilePage} addPost={props.addPost} updateNewText={updateNewText} />} />
           <Route path="/Dialogs" element={<Dialogs postsData={props.postsData} state={props.state.dialogsPage} />} />
           <Route path="/Music" element={<Music postsData={props.postsData} />} />
           <Route path="/News" element={<News postsData={props.postsData} />} />

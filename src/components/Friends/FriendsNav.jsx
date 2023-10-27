@@ -7,8 +7,6 @@ const FriendsNav = (props) => {
    
     let FriendElement = props.friends.map((f) => <ItemFriend foto={f.foto} id={f.id} name={f.name} />)
 
-    console.log(props.elements)
-
     return (
         <div className={FriendsStyle.friendsNav}>
             {FriendElement}

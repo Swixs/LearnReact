@@ -4,20 +4,28 @@ import PostTxt from './ProfileUsersPostText';
 import ClassInput from '../Profile-input/ProfileInput.module.css';
 
 const ProfilePost = (props) => {
-  const [newPostText, setNewPostText] = useState('');
+  const [newPostText, setNewPostText] = useState(props.newTextInput);
 
   const handleAddPost = () => {
-    props.addPost(newPostText); 
+    props.addPost(newPostText);
     setNewPostText(''); 
-  };
+    console.log(props);
+  }
+
+  const onPostChange = (event) => {
+    const text = event.target.value;
+    setNewPostText(text); 
+  }
+
+
 
   return (
     <div>
       <div className={ClassInput.items}>
         <textarea
           value={newPostText}
-          onChange={(e) => setNewPostText(e.target.value)}
-        ></textarea>
+          onChange={onPostChange}
+        />
         <button onClick={handleAddPost}>send</button>
       </div>
       <div>
