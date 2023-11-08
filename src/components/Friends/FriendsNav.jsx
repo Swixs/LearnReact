@@ -2,6 +2,7 @@ import React from "react";
 import FriendsStyle from "./FriendNav.module.css";
 import ItemFriend from "./ItemFriend";
 
+
 const FriendsNav = (props) => {
 
    

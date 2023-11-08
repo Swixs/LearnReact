@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import classPosts from './ProfileUserPosts.module.css';
-import PostTxt from './ProfileUsersPostText';
+import PostTxt from './PostTxt';
 import ClassInput from '../Profile-input/ProfileInput.module.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const ProfilePost = (props) => {
   const [newPostText, setNewPostText] = useState(props.newTextInput);
@@ -9,7 +10,6 @@ const ProfilePost = (props) => {
   const handleAddPost = () => {
     props.addPost(newPostText);
     setNewPostText(''); 
-    console.log(props);
   }
 
   const onPostChange = (event) => {
@@ -22,11 +22,11 @@ const ProfilePost = (props) => {
   return (
     <div>
       <div className={ClassInput.items}>
-        <textarea
+      <input class="form-control form-control-sm" width={400} type="text" placeholder='your comment' aria-label=".form-control-sm example"
           value={newPostText}
           onChange={onPostChange}
         />
-        <button onClick={handleAddPost}>send</button>
+        <button type="button" class="btn btn-outline-primary" onClick={handleAddPost}>Primary</button>
       </div>
       <div>
         <div className={classPosts.postRow}>

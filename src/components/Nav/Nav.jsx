@@ -1,5 +1,5 @@
 import React from "react";
-import NavClass from './Nav.module.css'
+import NavClass from './Nav.module.css';
 import { NavLink } from "react-router-dom";
 import friends from "../Redux/FriendsData";
 import FriendsNav from "../Friends/FriendsNav";
