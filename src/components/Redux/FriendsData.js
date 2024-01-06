@@ -1,7 +1,0 @@
-let friends = [
-    { id: 1, name: "Fankix", foto: "https://scontent-mxp1-1.cdninstagram.com/v/t51.2885-19/394913074_241651211901651_9169969674536858721_n.jpg?stp=dst-jpg_s100x100&_nc_cat=109&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=FFS2pCO34KwAX8CpeQz&_nc_oc=AQnRVnmDA-GlGgq8-Ipcz1tUSooGWbH_bRjMriXe_Wx_UOGeNPcBiwpm7R8oNxXRb5zXfHZcbRdrJn3-_XCT5oDq&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-mxp1-1.cdninstagram.com&oh=00_AfCJp3WcmY1zhhGMvuf8EKx94BSzNeRxFsH2UoBVv4lfmA&oe=65456CDA" },
-    { id: 2, name: "Никита", foto: "https://scontent-mxp1-1.cdninstagram.com/v/t51.2885-19/316122255_664893751762628_191205699289462856_n.jpg?stp=dst-jpg_s100x100&_nc_cat=103&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=vTDBkClqkzUAX_yFgrn&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-mxp1-1.cdninstagram.com&oh=00_AfDIzXy0MNSeGogruEb04_kgfCa9ccERcBOIHjlLZeuhUA&oe=653D65BD" },
-    { id: 3, name: "Вова", foto: "https://scontent-mxp1-1.cdninstagram.com/v/t51.2885-19/273688174_451778096658026_5221378672830319211_n.jpg?stp=dst-jpg_s100x100&_nc_cat=102&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=6VtMFbPyEPMAX8DbFMK&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-mxp1-1.cdninstagram.com&oh=00_AfAdjHX7Ya3JLElqZJxxYE3oRdYOsvCMueyjW4grj_q09Q&oe=653D6608" }
-  ]
-
-  export default friends

@@ -1,10 +1,6 @@
 import React from "react";
 import NavClass from './Nav.module.css';
 import { NavLink } from "react-router-dom";
-import friends from "../Redux/FriendsData";
-import FriendsNav from "../Friends/FriendsNav";
-
-
 
 const Nav = (props) => {
 
@@ -23,7 +19,6 @@ const Nav = (props) => {
     </div>
     <div>
       <NavLink to='/Friends' className={navData => navData.isActive ? NavClass.active : NavClass.item}>Friends
-        <FriendsNav friends={friends} />
       </NavLink>
     </div>
     <div className={NavClass.settingItem}>
