@@ -3,7 +3,7 @@ import classPosts from './ProfileUserPosts.module.css';
 import PostTxt from './PostTxt';
 import ClassInput from '../Profile-input/ProfileInput.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { addPostActionCreator, updateNewPostTextActionCreator } from '../../Redux/state';
+import { addPostActionCreator, updateNewPostTextActionCreator } from '../../Redux/profile-reducer';
 
 
 const ProfilePost = (props) => {
