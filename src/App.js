@@ -11,10 +11,6 @@ import Settings from './components/Settings/Settings';
 import Friends from './components/Friends/Friends';
 
 const App = (props) => {
-  const updateNewText = (text) => {
-    props.updateNewPostText(text);
-  }
-
   return (
     <BrowserRouter>
       <div className='App'>
@@ -22,8 +18,8 @@ const App = (props) => {
         <Nav />
         <Routes>
           <Route path="/Profile" element={<Profile profilePage={props.state.profilePage} 
-            addPost={props.addPost} updateNewText={updateNewText} />} />
-          <Route path="/Dialogs" element={<Dialogs state={props.state.dialogsPage} />} />
+            dispatch={props.dispatch}/>} />
+          <Route path="/Dialogs" element={<Dialogs store={props.store}/>} />
           <Route path="/Music" element={<Music />} />
           <Route path="/News" element={<News />} />
           <Route path="/Friends" element={<Friends />} />

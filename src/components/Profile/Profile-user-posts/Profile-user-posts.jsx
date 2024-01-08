@@ -3,25 +3,22 @@ import classPosts from './ProfileUserPosts.module.css';
 import PostTxt from './PostTxt';
 import ClassInput from '../Profile-input/ProfileInput.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { addPostActionCreator, updateNewPostTextActionCreator } from '../../Redux/state';
+
 
 const ProfilePost = (props) => {
   const [newPostText, setNewPostText] = useState(props.profilePage.NewTextInput);
 
   const handleAddPost = () => {
-    props.addPost(newPostText);
+    props.dispatch(addPostActionCreator());
     setNewPostText('');
   };
 
   const onPostChange = (event) => {
     const newText = event.target.value;
     setNewPostText(newText);
-    if (props.updateNewText) {
-      props.updateNewText(newText);
-    }
+    props.dispatch(updateNewPostTextActionCreator(newText));
   };
-
-  console.log(newPostText)
-  console.log(props.profilePage)
 
   return (
     <div>
