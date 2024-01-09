@@ -22,7 +22,10 @@ let rerenderEntireTree = (state) => {
 rerenderEntireTree(store.getState())
 
 store.subscribe(() => {
-   rerenderEntireTree(store.getState())
+
+   let state = store.getState()
+
+   rerenderEntireTree(store.getState(state))
 })
 
 reportWebVitals()
